@@ -31,7 +31,7 @@ try {
 
 
  if ($contador>0) {
-
+   session_start();
 $_SESSION['correo'] = $email;
     header('Location: ../lista.php');
  } else {

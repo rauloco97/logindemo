@@ -7,9 +7,6 @@ session_start();
 $correo = $_SESSION['correo'];
 
 
-
-
-
 $sql = "SELECT * FROM usuarios";
 
 
