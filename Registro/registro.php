@@ -3,7 +3,7 @@
 
 
 <label id="icon" for="email"><i class="icon-envelope "></i></label>
-<input type="text" name="email" id="email" placeholder="Email" required/>
+<input type="text" name="email" id="email" placeholder="Email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required/>
 
 
 <label id="icon" for="clave"><i class="icon-shield"></i></label>
