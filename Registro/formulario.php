@@ -1,5 +1,5 @@
 <?php  
-require 'localhost\logindemo\Concexion\coneccion.php';
+require '../Conexion/conexion.php';
 
 $clave = $_POST['clave'];
 
@@ -22,7 +22,7 @@ if ($conexion == true) {
  $conexion = null;
 
 
- header('Location: lista.php');
+ header('Location: ../lista.php');
 } else {
  echo "Algo ha fallado";
 }
