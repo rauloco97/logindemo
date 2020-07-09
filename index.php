@@ -14,4 +14,4 @@
 
 </form>
 
-<a href="registro.php"> Registrarse</a>
+<a href="Registro/registro.php"> Registrarse</a>
