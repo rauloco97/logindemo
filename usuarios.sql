@@ -38,8 +38,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `correo`, `pass`) VALUES
-(1, 'raul', '$2y$15$KnJft43klQh0vgYwdahQxeQH.Aw4vGTnVME9/tngEQfYPi9AlO.Sy'),
-(2, 'raul', '$2y$15$.h3okySAi3dGaqLt7Uh6T.QMpogQQDQ1yFYSTy..L5GQxCmP0cxUK');
+(1, 'raul@gmail.com', '$2y$15$KnJft43klQh0vgYwdahQxeQH.Aw4vGTnVME9/tngEQfYPi9AlO.Sy'),;
 
 --
 -- Índices para tablas volcadas
