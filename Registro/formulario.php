@@ -10,13 +10,15 @@ $clave_cifrada = password_hash($clave, PASSWORD_DEFAULT, array("cost"=>15));
 if ($conexion == true) {
     
 
-$consulta = mysqli_query ($conexion, "SELECT correo FROM usuarios WHERE correo = '$email' ");  
+$consulta = mysqli_query ($conn, "SELECT correo FROM usuarios WHERE correo = '$email' ");  
+
+
 
 
 if(!$consulta){ 
 
 
- $insert = $conexion->prepare("INSERT INTO usuarios (correo, pass) VALUES (  :email, :clave)");
+ $insert = $conexion->prepare("INSERT INTO usuarios (correo, pass) VALUES ( :email, :clave)");
 
  $insert->bindParam(':email', $_POST['email']);
  $insert->bindParam(':clave', $clave_cifrada);
@@ -32,6 +34,7 @@ if(!$consulta){
  header('Location: ../lista.php');
 }else 
 echo "correo ya asignado";
+header('Location: ../index.php');
 } else {
  echo "Algo ha fallado";
 }
