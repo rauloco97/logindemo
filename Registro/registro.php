@@ -76,6 +76,9 @@
 
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
     <!-- Vendor JS-->
     <script src="vendor/select2/select2.min.js"></script>
     <script src="vendor/datepicker/moment.min.js"></script>

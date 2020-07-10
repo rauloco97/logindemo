@@ -31,10 +31,9 @@ if(!$consulta){
  $conexion = null;
 
 
- header('Location: ../lista.php');
+ echo json_encode(array('success' => 1));
 }else 
-echo "correo ya asignado";
-header('Location: ../index.php');
+echo json_encode(array('success' => 0));
 } else {
  echo "Algo ha fallado";
 }
