@@ -30,10 +30,9 @@ if(!$consulta){
 
  $conexion = null;
 
-
- echo json_encode(array('success' => 1));
+echo 
 }else 
-echo json_encode(array('success' => 0));
+header('Location: ../lista.php');
 } else {
  echo "Algo ha fallado";
 }
