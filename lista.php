@@ -45,8 +45,4 @@ foreach($resultado as $fila) {
 
 else
     header("location: index.php");
-
-
-
-
 ?>
