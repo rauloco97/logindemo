@@ -12,8 +12,7 @@ if ($conexion == true) {
 
 $consulta = mysqli_query ($conexion, "SELECT correo FROM usuarios WHERE correo = '$email' ");  
 
-// esto válida si la consulta se ejecuto correctamente o no
-// pero en ningún caso válida si devolvió algún registro
+
 if(!$consulta){ 
 
 
